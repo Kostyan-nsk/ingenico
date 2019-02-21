@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ "$2" == "/dev/ingenico" ]; then
+    /opt/ingenico/disconnect.py
+
+    timeout=$(cat /proc/sys/net/ipv4/tcp_fin_timeout)
+    echo 1 > /proc/sys/net/ipv4/tcp_orphan_retries
+    echo 1 > /proc/sys/net/ipv4/tcp_fin_timeout
+    sleep 2
+    echo $timeout > /proc/sys/net/ipv4/tcp_fin_timeout
+    echo 0 > /proc/sys/net/ipv4/tcp_orphan_retries
+fi

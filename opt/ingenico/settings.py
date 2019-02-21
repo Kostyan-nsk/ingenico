@@ -1,0 +1,8 @@
+FIRMWARE_PATH = '/home/pi/telium'
+LOG_FILE = '/opt/ingenico/ctrlserver.log'
+PID_FILE = '/opt/ingenico/ctrlserver.pid'
+PIPE = '/opt/ingenico/.pipe'
+PASSWORD = ''
+FTP_SERVER = ''
+FTP_USER = ''
+FTP_PASSWORD = ''

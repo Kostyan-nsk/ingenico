@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="tty", ATTRS{idVendor}=="079b", ATTRS{idProduct}=="0028", SYMLINK+="ingenico", TAG+="systemd", ENV{SYSTEMD_WANTS}="ingenico.service"

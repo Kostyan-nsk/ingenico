@@ -1,0 +1,2 @@
+file /etc/ppp/options-ingenico
+connect "/usr/sbin/chat -v -f /etc/chatscripts/ingenico.chat"

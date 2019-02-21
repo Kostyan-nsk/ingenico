@@ -1,0 +1,6 @@
+[Unit]
+Description=Ingenico PPP Session
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/pppd call ingenico

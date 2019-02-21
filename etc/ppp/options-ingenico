@@ -1,0 +1,9 @@
+ingenico
+115200
+debug
+local
+noauth
+noccp
+novj
+user "pppuser"
+password "123456"
